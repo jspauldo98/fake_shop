@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 import 'materialize-css/dist/css/materialize.min.css';
 
 class App extends Component {
@@ -9,7 +10,9 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar/>
-            
+          <Switch>
+            <Route exact path="/" component={Home}/>
+          </Switch>
         </div>
       </BrowserRouter>
     );
