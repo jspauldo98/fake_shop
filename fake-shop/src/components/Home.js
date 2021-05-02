@@ -1,9 +1,9 @@
 import { Button } from '@material-ui/core';
-import { Icon } from '@material-ui/core';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class Home extends Component{
+
    render () {
       let itemList = this.props.items.map(item => {
          return (
@@ -15,10 +15,12 @@ class Home extends Component{
 
                <div className="card-content">
                   <p>{item.desc}</p>
-                  <p><b>Price: {item.price}</b></p>
-                  <Button variant="secondary" className="card-action">Add to Cart</Button>
+                  <p><b>Price: {item.price}</b></p>                  
                </div>
-            </div>
+               <div className="card-action">
+                  <Button className="button" color="secondary">Add to Cart</Button>
+               </div>
+            </div>            
          )
       })
       return (
@@ -27,15 +29,15 @@ class Home extends Component{
             <div className="box">
                {itemList}
             </div>
-         </div>
+         </div>         
       )
    }
-}    
+}  
 
-const mapStateToProps = (state) => {
+const mapStateToItems = (state) => {
    return {
       items : state.items
    }
 }
 
-export default connect(mapStateToProps)(Home) 
+export default connect(mapStateToItems)(Home) 

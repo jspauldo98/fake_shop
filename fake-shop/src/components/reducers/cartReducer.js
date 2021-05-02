@@ -7,12 +7,12 @@ import Item6 from '../../images/item6.png'
 
 const initState = {
    items: [
-      {id:1,title:'Airplane', desc: "Lorem ipsum dolor sit amet consenter adipisicing elit. Minima, ex.", price:110,img:Item1},
-      {id:2,title:'Baboon', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:80,img: Item2},
-      {id:3,title:'Boat', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:120,img: Item3},
-      {id:4,title:'Grapes', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:260,img:Item4},
-      {id:5,title:'Peppers', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:160,img: Item5},
-      {id:6,title:'Country Block', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img: Item6}
+      {id:1,title:'Airplane', desc: "Our most well crafted air vehicle", price:110,img:Item1},
+      {id:2,title:'Baboon', desc: "This is a great specimen", price:80,img: Item2},
+      {id:3,title:'Boat', desc: "Will get you across the sea.",price:120,img: Item3},
+      {id:4,title:'Grapes', desc: "Our finest grapes grown in our backyard.", price:260,img:Item4},
+      {id:5,title:'Peppers', desc: "DELICIOUS", price:160,img: Item5},
+      {id:6,title:'Country Block', desc: "Street walk.",price:90,img: Item6}
    ],
    addedItems:[],
    total: 0
